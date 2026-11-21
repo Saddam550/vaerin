@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — VÆRIN</title>
+<meta name="description" content="Book a private viewing, ask about a VÆRIN watch or arrange service.">
+<meta name="theme-color" content="#07070a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading" data-page="contact">
+
+<div class="preloader" aria-hidden="true">
+  <div class="pl-logo">VÆRIN</div>
+  <div class="pl-bar"><span></span></div>
+  <div class="pl-num">000</div>
+</div>
+<div class="page-curtain"></div>
+<div class="progress"></div>
+<div class="cursor"></div><div class="cursor-dot"></div>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="VÆRIN home">V<b>Æ</b>RIN</a>
+    <nav class="nav-links" aria-label="Main">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="collection" href="collection.html">Collection</a>
+      <a data-nav="craft" href="craftsmanship.html">Craftsmanship</a>
+      <a data-nav="maison" href="maison.html">Maison</a>
+      <a data-nav="contact" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn" href="contact.html" data-magnetic>Book a viewing</a>
+      <button class="burger" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <a class="m-link" data-nav="home" href="index.html">Home</a>
+  <a class="m-link" data-nav="collection" href="collection.html">Collection</a>
+  <a class="m-link" data-nav="craft" href="craftsmanship.html">Craftsmanship</a>
+  <a class="m-link" data-nav="maison" href="maison.html">Maison</a>
+  <a class="m-link" data-nav="contact" href="contact.html">Contact</a>
+  <div class="m-foot">concierge@vaerin.example</div>
+</div>
+
+<div id="viewport">
+<main>
+
+<section class="page-hero" style="min-height:62vh">
+  <div class="ph-bg"><img src="img/crown.jpg" alt=""></div>
+  <div class="container">
+    <span class="eyebrow" data-reveal data-load>Contact</span>
+    <h1 class="display h-xxl" data-split="load">Let's talk <em>time.</em></h1>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container contact-grid">
+    <div>
+      <p class="lead" data-reveal>Book a private viewing, ask about a model or arrange a service. We reply within two working days.</p>
+      <ul class="c-info mt-3" data-stagger="li">
+        <li><i class="fa-solid fa-location-dot"></i><div><b>Atelier &amp; showroom</b><span>12 Meridian Row, Your City</span></div></li>
+        <li><i class="fa-regular fa-clock"></i><div><b>Hours</b><span>Mon–Sat · 10:00–18:00, by appointment</span></div></li>
+        <li><i class="fa-regular fa-envelope"></i><div><b>Email</b><span>concierge@vaerin.example</span></div></li>
+        <li><i class="fa-solid fa-phone"></i><div><b>Phone</b><span>+00 000 000 0000</span></div></li>
+      </ul>
+    </div>
+    <form class="form" data-reveal>
+      <div class="f-row">
+        <div class="field"><input id="f-name" type="text" placeholder=" " required><label for="f-name">Name</label></div>
+        <div class="field"><input id="f-mail" type="email" placeholder=" " required><label for="f-mail">Email</label></div>
+      </div>
+      <div class="field">
+        <select id="f-int"><option>Book a private viewing</option><option>Aurelis</option><option>Noctis</option><option>Vantage</option><option>Service &amp; care</option><option>Something else</option></select>
+        <label for="f-int">I'm interested in</label>
+      </div>
+      <div class="field"><textarea id="f-msg" placeholder=" " required></textarea><label for="f-msg">Message</label></div>
+      <div class="form-msg"></div>
+      <div><button class="btn btn-solid" type="submit" data-magnetic>Send message <i class="fa-solid fa-arrow-right-long"></i></button></div>
+    </form>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="map" data-reveal><div class="pin"><i class="fa-solid fa-location-dot"></i><span>Atelier · 12 Meridian Row</span></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    <span class="eyebrow" data-reveal>FAQ</span>
+    <h2 class="display h-lg mt-2 mb-4" data-split>Good <em>questions.</em></h2>
+    <div class="mt-4" data-reveal><div class="faq-item"><button class="faq-q">How do I book a private viewing?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Send us a message with your preferred date and the model you would like to see. We will confirm within two working days.</p></div></div><div class="faq-item"><button class="faq-q">Do you ship internationally?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Yes. Every watch is shipped insured and signature-required. Delivery times and duties depend on the destination.</p></div></div><div class="faq-item"><button class="faq-q">What does the warranty cover?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Manufacturing defects in the movement and case. Details are provided with every watch — placeholder text: replace with your policy.</p></div></div><div class="faq-item"><button class="faq-q">Can I change the strap?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>All watches use standard-width quick-release spring bars, so straps can be swapped without tools.</p></div></div><div class="faq-item"><button class="faq-q">How often should the watch be serviced?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>We recommend a service every five to seven years, or sooner if timekeeping drifts. Contact us to arrange it.</p></div></div></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <div class="f-big">Be the first to hear <em>when the hour turns.</em></div>
+        <form class="news"><input type="email" placeholder="Your email address" aria-label="Email" required><button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right-long"></i></button></form>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="craftsmanship.html">Craftsmanship</a></li>
+          <li><a href="maison.html">Maison</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Watches</h5>
+        <ul>
+          <li><a href="product.html?w=aurelis">Aurelis</a></li>
+          <li><a href="product.html?w=noctis">Noctis</a></li>
+          <li><a href="product.html?w=vantage">Vantage</a></li>
+          <li><a href="contact.html">Service &amp; care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Atelier</h5>
+        <ul>
+          <li>12 Meridian Row, Your City</li>
+          <li>Mon–Sat · 10:00–18:00, by appointment</li>
+          <li><a href="mailto:concierge@vaerin.example">concierge@vaerin.example</a></li>
+          <li><a href="tel:+000000000000">+00 000 000 0000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-mark" aria-hidden="true">VÆRIN</div>
+    <div class="f-bottom"><span>© 2026 VÆRIN. All rights reserved.</span><span>Privacy · Terms · Shipping</span></div>
+  </div>
+</footer>
+</div><!-- /#viewport -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/dust.js"></script>
+<script src="js/watch3d.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

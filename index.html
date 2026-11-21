@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VÆRIN — Time, composed in darkness</title>
+<meta name="description" content="VÆRIN is a watch atelier crafting blackened-steel automatic, GMT and skeleton chronograph watches.">
+<meta name="theme-color" content="#07070a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading" data-page="home">
+
+<div class="preloader" aria-hidden="true">
+  <div class="pl-logo">VÆRIN</div>
+  <div class="pl-bar"><span></span></div>
+  <div class="pl-num">000</div>
+</div>
+<div class="page-curtain"></div>
+<div class="progress"></div>
+<div class="cursor"></div><div class="cursor-dot"></div>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="VÆRIN home">V<b>Æ</b>RIN</a>
+    <nav class="nav-links" aria-label="Main">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="collection" href="collection.html">Collection</a>
+      <a data-nav="craft" href="craftsmanship.html">Craftsmanship</a>
+      <a data-nav="maison" href="maison.html">Maison</a>
+      <a data-nav="contact" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn" href="contact.html" data-magnetic>Book a viewing</a>
+      <button class="burger" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <a class="m-link" data-nav="home" href="index.html">Home</a>
+  <a class="m-link" data-nav="collection" href="collection.html">Collection</a>
+  <a class="m-link" data-nav="craft" href="craftsmanship.html">Craftsmanship</a>
+  <a class="m-link" data-nav="maison" href="maison.html">Maison</a>
+  <a class="m-link" data-nav="contact" href="contact.html">Contact</a>
+  <div class="m-foot">concierge@vaerin.example</div>
+</div>
+
+<div id="viewport">
+<main>
+
+<section class="hero" id="top">
+  <div class="hero-media">
+    <video autoplay muted loop playsinline preload="auto" data-lazy poster="img/hero-poster.jpg"><source src="video/hero.mp4" type="video/mp4"></video>
+  </div>
+  <canvas class="dust" aria-hidden="true"></canvas>
+  <div class="container hero-content">
+    <span class="eyebrow" data-reveal data-load>Automatic · GMT · Skeleton</span>
+    <h1 class="display h-xl" data-split="load">Time, composed in <em>darkness.</em></h1>
+    <div class="hero-foot">
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="collection.html" data-magnetic>Explore the collection <i class="fa-solid fa-arrow-right-long"></i></a>
+        <a class="btn" href="craftsmanship.html" data-magnetic>The craft</a>
+      </div>
+      <div class="hero-meta">
+        <span>Collections<b>03</b></span>
+        <span>Water resistance<b>200 m</b></span>
+        <span>Power reserve<b>72 h</b></span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-ind"><span>Scroll</span><i></i></div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Blackened steel</span><span>Rose gold</span><span>Sapphire crystal</span><span>Automatic</span><span>GMT</span><span>Skeleton</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container manifesto-wrap">
+    <div>
+      <span class="eyebrow" data-reveal>The Maison</span>
+      <p class="manifesto-text mt-2" data-split="fill">We build watches for people who notice. Every bevel, every bridge, every sweep of the second hand is composed slowly, in low light, until it is exactly right.</p>
+      <div class="mt-3" data-reveal><a class="link-u" href="maison.html">Our story <i class="fa-solid fa-arrow-right-long"></i></a></div>
+    </div>
+    <div>
+      <div class="img-frame tall"><img src="img/atelier.jpg" alt="Watchmaker's bench with movement parts laid out" loading="lazy"></div>
+      <div class="cap">The atelier bench</div>
+    </div>
+  </div>
+</section>
+
+<section class="stage" id="stage">
+  <div class="stage-ghost" aria-hidden="true">VANTAGE</div>
+  <canvas id="watch-canvas" aria-label="Interactive 3D model of the Vantage watch" role="img"></canvas>
+  <div class="stage-ui">
+    <div class="stage-top">
+      <div><span class="eyebrow">Interactive · Vantage GMT</span><div class="hint mt-1">Scroll to turn the watch · move your mouse to tilt</div></div>
+      <div class="stage-dots"><i class="on"></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="stage-steps">
+      <div class="stage-step"><span class="n">01</span><h3>Blackened steel</h3><p>A 41&nbsp;mm case finished in matte charcoal, with a coin-edge bezel that grips as well as it looks.</p></div>
+      <div class="stage-step"><span class="n">02</span><h3>Built for depth</h3><p>A signed screw-down crown seals the case to 200 metres. The hands you see are keeping real time.</p></div>
+      <div class="stage-step right"><span class="n">03</span><h3>Two times, one glance</h3><p>A triangle-tipped GMT hand rides a 24-hour bezel, so home is never more than a glance away.</p></div>
+      <div class="stage-step"><span class="n">04</span><h3>The dial, up close</h3><p>Sunburst charcoal, rose-gold batons and a date at three. Quiet until the light finds it.</p><div class="mt-2" style="pointer-events:auto"><a class="link-u" href="product.html?w=vantage">Discover the Vantage <i class="fa-solid fa-arrow-right-long"></i></a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="hscroll" id="hscroll">
+  <div class="hs-head"><span class="eyebrow">The Collection</span><span class="hint">Keep scrolling →</span></div>
+  <div class="hs-track">
+    <article class="hs-panel">
+      <div class="hs-img"><img src="img/aurelis.jpg" alt="Aurelis skeleton chronograph" loading="lazy"></div>
+      <div class="hs-txt"><span class="idx">01</span><h3>AURELIS</h3><div class="sub">Skeleton Chronograph</div><p>The movement, laid bare. Black bridges, rose-gold bevels and two pushers — a chronograph with nothing to hide.</p><a class="btn" href="product.html?w=aurelis" data-magnetic>Discover <i class="fa-solid fa-arrow-right-long"></i></a></div>
+    </article>
+    <article class="hs-panel">
+      <div class="hs-img"><img src="img/noctis.jpg" alt="Noctis GMT dual-time watch" loading="lazy"></div>
+      <div class="hs-txt"><span class="idx">02</span><h3>NOCTIS</h3><div class="sub">GMT · Dual Time</div><p>A slate sunburst dial and applied rose-gold batons. The quiet traveller, on an alligator-grain strap.</p><a class="btn" href="product.html?w=noctis" data-magnetic>Discover <i class="fa-solid fa-arrow-right-long"></i></a></div>
+    </article>
+    <article class="hs-panel">
+      <div class="hs-img"><img src="img/vantage.jpg" alt="Vantage GMT automatic 200 metre watch" loading="lazy"></div>
+      <div class="hs-txt"><span class="idx">03</span><h3>VANTAGE</h3><div class="sub">GMT Automatic · 200 M</div><p>The everyday travel watch. A cream 24-hour bezel, lume-filled batons and a rubber strap built to be worn hard.</p><a class="btn" href="product.html?w=vantage" data-magnetic>Discover <i class="fa-solid fa-arrow-right-long"></i></a></div>
+    </article>
+  </div>
+  <div class="hs-bar"><span></span></div>
+</section>
+
+<section class="scrub" id="scrub">
+  <video id="exploded" muted playsinline preload="auto" poster="img/exploded-poster.jpg" src="video/exploded.mp4"></video>
+  <div class="scrub-ui">
+    <div><span class="eyebrow">Anatomy of a chronograph</span><h2 class="display h-lg mt-2">Every part, <em>accounted for.</em></h2></div>
+    <div class="scrub-cap">
+      <div><span class="n">01</span><h4>The crystal lifts away</h4><p>Sapphire first. Beneath it, the dial and hands sit exposed.</p></div>
+      <div><span class="n">02</span><h4>Crown and pushers released</h4><p>Each control is its own small machine, sealed against water and dust.</p></div>
+      <div><span class="n">03</span><h4>Laid out, piece by piece</h4><p>Wheels, bridges and screws separated — then reassembled by hand.</p></div>
+    </div>
+  </div>
+  <div class="scrub-meter"><span></span></div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="gap-head">
+      <div><span class="eyebrow" data-reveal>Craftsmanship</span><h2 class="display h-lg mt-2" data-split>Finished by hand, <em>under a loupe.</em></h2></div>
+      <a class="link-u" href="craftsmanship.html" data-reveal>The full process <i class="fa-solid fa-arrow-right-long"></i></a>
+    </div>
+    <div class="craft-grid">
+      <article class="craft-card"><div class="img-frame"><img src="img/case-finishing.jpg" alt="Case being polished on a wheel" loading="lazy"></div><div class="mt-2"><span class="num">01</span><h4>Case finishing</h4><p>Brushed flanks, polished chamfers. Each surface is worked on its own wheel.</p></div></article>
+      <article class="craft-card"><div class="img-frame"><img src="img/hand-finishing.jpg" alt="Hands filing a balance component" loading="lazy"></div><div class="mt-2"><span class="num">02</span><h4>Hand finishing</h4><p>Edges are filed and angled by hand — the detail you only see when you look closely.</p></div></article>
+      <article class="craft-card"><div class="img-frame"><img src="img/movement.jpg" alt="Rose-gold watch movement" loading="lazy"></div><div class="mt-2"><span class="num">03</span><h4>The movement</h4><p>Rose-toned bridges, blued screws and jewels, assembled and regulated in-house.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<div class="stats container" style="padding:0 var(--pad)">
+  <div class="stat"><b data-count="3">0</b><span>Collections</span></div>
+  <div class="stat"><b data-count="72">0</b><span>Hour power reserve</span></div>
+  <div class="stat"><b data-count="200">0</b><span>Metres water res.</span></div>
+  <div class="stat"><b data-count="24">0</b><span>Hour second zone</span></div>
+</div>
+
+<section class="band" style="margin-top:clamp(60px,8vw,120px)">
+  <video autoplay muted loop playsinline data-lazy poster="img/macro-poster.jpg"><source src="video/macro.mp4" type="video/mp4"></video>
+  <div class="inner"><span class="eyebrow" data-reveal>Macro</span><h2 class="display h-xl" data-split>Look <em>closer.</em></h2></div>
+</section>
+
+<section class="split rev">
+  <div class="s-img"><img src="img/strap.jpg" alt="Leather strap with perforated inlay and rose-gold case flank" loading="lazy"></div>
+  <div class="s-txt">
+    <span class="eyebrow" data-reveal>Materials</span>
+    <h2 class="display h-lg mt-2" data-split>Leather, rubber, <em>rose gold.</em></h2>
+    <p class="lead mt-2" data-reveal>Straps are cut and stitched to sit low and flat. Blackened steel meets warm rose-gold flanks — contrast that ages well.</p>
+    <ul class="feat-list" data-reveal>
+      <li><span>Case</span><span>Blackened stainless steel</span></li>
+      <li><span>Accents</span><span>Rose-gold toned</span></li>
+      <li><span>Crystal</span><span>Sapphire, anti-reflective</span></li>
+      <li><span>Straps</span><span>Calf, alligator-grain, rubber</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta-bg"><img src="img/vantage-dark.jpg" alt="VÆRIN Vantage in low light" loading="lazy"></div>
+  <div class="container">
+    <span class="eyebrow" data-reveal>Private viewing</span>
+    <h2 class="display h-xl" data-split>Find your <em>hour.</em></h2>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn btn-solid" href="contact.html" data-magnetic>Book a viewing <i class="fa-solid fa-arrow-right-long"></i></a>
+      <a class="btn" href="collection.html" data-magnetic>View the collection</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <div class="f-big">Be the first to hear <em>when the hour turns.</em></div>
+        <form class="news"><input type="email" placeholder="Your email address" aria-label="Email" required><button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right-long"></i></button></form>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="craftsmanship.html">Craftsmanship</a></li>
+          <li><a href="maison.html">Maison</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Watches</h5>
+        <ul>
+          <li><a href="product.html?w=aurelis">Aurelis</a></li>
+          <li><a href="product.html?w=noctis">Noctis</a></li>
+          <li><a href="product.html?w=vantage">Vantage</a></li>
+          <li><a href="contact.html">Service &amp; care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Atelier</h5>
+        <ul>
+          <li>12 Meridian Row, Your City</li>
+          <li>Mon–Sat · 10:00–18:00, by appointment</li>
+          <li><a href="mailto:concierge@vaerin.example">concierge@vaerin.example</a></li>
+          <li><a href="tel:+000000000000">+00 000 000 0000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-mark" aria-hidden="true">VÆRIN</div>
+    <div class="f-bottom"><span>© 2026 VÆRIN. All rights reserved.</span><span>Privacy · Terms · Shipping</span></div>
+  </div>
+</footer>
+</div><!-- /#viewport -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/dust.js"></script>
+<script src="js/watch3d.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
